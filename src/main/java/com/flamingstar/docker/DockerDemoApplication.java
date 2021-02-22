@@ -15,6 +15,6 @@ public class DockerDemoApplication {
 
     @RequestMapping("/index")
     public String index(){
-        return "Hello! This is your first docker demo";
+        return "Hello! This is your first docker demo.";
     }
 }
