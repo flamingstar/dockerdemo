@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  dockerdemoapplication1:
+    image: dockerdemoapplication1
+    deploy:
+      restart_policy:
+        condition: on-failure
+    expose:
+      - "80"
+    ports:
+      - 18012:8080
