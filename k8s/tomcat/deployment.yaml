@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: k8s-tomcat
+  name: k8s-tomcat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-tomcat
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: k8s-tomcat
+    spec:
+      containers:
+        - image: daocloud.io/library/tomcat:6.0-jre7
+          name: k8s-tomcat
+          resources: {}
+status: {}
