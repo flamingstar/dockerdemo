@@ -6,7 +6,7 @@
 FROM openjdk:8u201-jdk-alpine3.9
 
 #作者
-MAINTAINER flamingstar <575912990@qq.com>
+MAINTAINER flamingstar <xxx@qq.com>
 
 #系统编码
 ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
